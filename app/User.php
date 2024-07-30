@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'mobile',
+        'name', 'email', 'password', 'mobile', 'expire'
     ];
 
     /**
@@ -36,4 +36,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /************************************* Start Relations One-One ****************************************/
+    public function phone() {
+        return $this->hasOne('App\Models\Phone', 'user_id');
+    }
+    /************************************* End Relations One-One ******************************************/
 }

@@ -13,6 +13,8 @@ return [
     |
     */
 
+    'name_req' => 'متنساش الاسم يحبيب اخوك',
+    'name_unique' => 'فتح معايا كتبت الاسم دا قبل كدة مينفعش تكرره',
     'accepted' => 'The :attribute must be accepted.',
     'active_url' => 'The :attribute is not a valid URL.',
     'after' => 'The :attribute must be a date after :date.',
